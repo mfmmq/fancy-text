@@ -1,0 +1,13 @@
+// Recommendations storage and management
+
+syntax = "proto3";
+
+package text;
+
+service FancyTextGenerator {
+  rpc GetFancyText(FancyText) returns (FancyText) {}
+}
+
+message FancyText {
+  string text = 1;
+}
